@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: rgb(17, 14, 93);
+            font-size: 2rem;
+            background: #a6da57;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;  background: #57dac6;">Inline CSS Example</h1>
+    
+    <p>This text is styled using internal CSS.</p>
+    
+    <p class="external-style">This text is styled using an external CSS file.</p>
+    
+    <p>This text is styled using internal CSS, which takes precedence over the external style for the same element.</p>
+    
+    <p style="color: red;">This text is styled using inline CSS, which takes precedence over the external and internal style for the same element.</p>
+    
+    <p style="font-weight: bold;">This text has inline CSS that makes it bold.</p>
+</body>
+</html>
