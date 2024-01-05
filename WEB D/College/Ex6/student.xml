@@ -1,0 +1,22 @@
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (RollNumber, FirstName, LastName, Major)>
+<!ELEMENT RollNumber (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Major (#PCDATA)>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+    <Student>
+        <RollNumber>101</RollNumber>
+        <FirstName>Ananya</FirstName>
+        <LastName>Chopra</LastName>
+        <Major>Computer Science</Major>
+    </Student>
+    <Student>
+        <RollNumber>102</RollNumber>
+        <FirstName>Kunal</FirstName>
+        <LastName>Mehra</LastName>
+        <Major>Electrical Engineering</Major>
+    </Student>
+</Students>

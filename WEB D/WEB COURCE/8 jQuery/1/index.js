@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   $("h1").css("color", "red");
-});o
+});
 
 // $("h1");
 // $("button");
@@ -17,7 +17,7 @@ $("h1").text("BYE");
 
 $("button").text("Do not click here"); //click here --> Do not click here
 $("button").text("<em> Do not click here </em>"); //click here --> <em> Do not click here </em>
-$("button").html("<em> Do not click here </em>"); //click here -->  Do not click here (in etalic)
+$("button").html("<b> Do not click here </b>"); //click here -->  Do not click here (in etalic)
 
 // manipulate attrribute
 

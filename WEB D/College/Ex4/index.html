@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selector and Event Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="header">jQuery!</h1>
+
+    <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+
+    <button id="changeTextBtn">Change Text</button>
+    <p class="targetText">Original Text</p>
+
+    <input type="text" id="inputField" placeholder="Type something">
+
+    <div class="box"></div>
+
+    <script>
+        $("li").css("color", "blue");
+
+        $(".list-item").hover(function () {
+            $(this).toggleClass("highlight");
+        });
+
+        $("#header").click(function () {
+            $(this).text("Header Clicked!");
+        });
+
+        $("button, .targetText").css("font-weight", "bold");
+
+        $("#changeTextBtn").click(function () {
+            $(".targetText").text("New Text");
+        });
+
+        $("input[type='text']").focus(function () {
+            $(this).css("border", "2px solid green");
+        });
+
+        $("ul").on("click", "li", function () {
+            alert("List item clicked: " + $(this).text());
+        });
+
+        $("#inputField").change(function () {
+            log("Input value changed to: " + $(this).val());
+        });
+
+        $(".box").hover(
+            function () {
+                $(this).css("background-color", "green");
+            },
+            function () {
+                $(this).css("background-color", "blue");
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

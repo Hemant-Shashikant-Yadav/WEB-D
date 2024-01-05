@@ -1,0 +1,25 @@
+<!ELEMENT Employees (Employee+)>
+<!ELEMENT Employee (ID, FirstName, LastName, Department, Salary)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees>
+    <Employee>
+        <ID>1</ID>
+        <FirstName>Rajesh</FirstName>
+        <LastName>Kumar</LastName>
+        <Department>IT</Department>
+        <Salary>60000</Salary>
+    </Employee>
+    <Employee>
+        <ID>2</ID>
+        <FirstName>Priya</FirstName>
+        <LastName>Sharma</LastName>
+        <Department>HR</Department>
+        <Salary>55000</Salary>
+    </Employee>
+</Employees>
