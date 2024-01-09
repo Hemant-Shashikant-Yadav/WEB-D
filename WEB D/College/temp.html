@@ -166,18 +166,15 @@
             // Extract pronunciation from the textarea
             var pronunciation = document.getElementById('pronunciation').value;
     
-            // Send an AJAX request to the Flask server
             $.ajax({
                 type: 'POST',
                 url: '/check_pronunciation',  // Update the URL to match your Flask route
                 data: {pronunciation: pronunciation},
                 success: function(response) {
-                    // Update the result div with feedback from the server
                     var resultDiv = document.getElementById('result');
                     resultDiv.innerHTML = response.feedback;
                     resultDiv.className = response.status;
                     
-                    // Apply entry animation to the result div
                     resultDiv.style.opacity = 1;
                     resultDiv.style.transform = "translateY(0)";
                 },
