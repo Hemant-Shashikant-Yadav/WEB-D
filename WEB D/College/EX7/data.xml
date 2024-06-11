@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<picture>
+    <Movie>
+        <Name>Fast X</Name>
+        <year>1949</year>
+    </Movie>
+    <Movie>
+        <Name>Animal</Name>
+        <year>1951</year>
+    </Movie>
+</picture>
