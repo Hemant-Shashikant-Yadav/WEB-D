@@ -314,7 +314,7 @@ function f() {
 }
 
 
-v.addEventListener("click",()=>{
-    f()
-    c.innerHTML='"'+a[b]+'"';
+v.addEventListener("click", () => {
+  f()
+  c.innerHTML = '"' + a[b] + '"';
 })
