@@ -1,0 +1,11 @@
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid blueviolet;
+    padding: 15px;
+    background-color:antiquewhite;
+
+    button{
+        float: right;
+    }
+}

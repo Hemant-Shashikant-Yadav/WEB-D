@@ -2,7 +2,15 @@
   "dependencies": {
     "express": "^4.19.2",
     "express-generator": "^4.2.0",
+    "icons": "^1.0.0",
     "mongodb": "^6.5.0",
+    "prime": "^0.3.2",
+    "primeicons": "^7.0.0",
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
   }
 }
